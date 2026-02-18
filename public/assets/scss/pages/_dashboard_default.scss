@@ -1,0 +1,205 @@
+/**=====================
+  3.20 Dashboard_default CSS Start
+==========================**/
+@use "../utils/variables" as*;
+
+.default-dashboard {
+  .welcome-card {
+    background: radial-gradient(circle, rgba($primary-color, 0.7) 20%, rgba($primary-color, 1) 100%);
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+      [dir='rtl'] & {
+        transform: scaleX(-1);
+      }
+    }
+
+    .welcome-content {
+      padding: 10px 0;
+      width: 50%;
+
+      @media (max-width: 991px) {
+        width: 62%;
+      }
+
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+
+      h2 {
+        color: $white;
+        text-wrap: nowrap;
+        margin-bottom: 8px;
+
+        @media (max-width: 767px) {
+          text-wrap: wrap;
+        }
+      }
+
+      p {
+        color: $white;
+        margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+      }
+
+      .btn {
+        background-color: $white !important;
+        border-color: $white !important;
+        color: var(--theme-default);
+        font-weight: 500;
+      }
+    }
+  }
+
+  .widget {
+    background: url(../../images/card-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .widget-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      h6 {
+        color: $theme-body-sub-title-color;
+        font-weight: 400;
+      }
+
+      &.style-1 {
+        img {
+          filter: drop-shadow(0px 4px 5px rgb($primary-color, 0.4));
+        }
+      }
+
+      &.style-2 {
+        img {
+          filter: drop-shadow(0px 4px 5px rgb(#f2a939, 0.4));
+        }
+      }
+
+      &.style-3 {
+        img {
+          filter: drop-shadow(0px 4px 5px rgb(#e23625, 0.4));
+        }
+      }
+
+      &.style-4 {
+        img {
+          filter: drop-shadow(0px 4px 5px rgb(#3fcc35, 0.4));
+        }
+      }
+
+      &.style-5 {
+        img {
+          filter: drop-shadow(0px 4px 5px rgb(#e23625, 0.4));
+        }
+      }
+
+      &.style-6 {
+        img {
+          filter: drop-shadow(0px 4px 5px rgb(#3fcc35, 0.4));
+        }
+      }
+
+      &.style-7 {
+        img {
+          filter: drop-shadow(0px 4px 5px rgb($primary-color, 0.4));
+        }
+      }
+
+      &.style-8 {
+        img {
+          filter: drop-shadow(0px 4px 5px rgb(#f2a939, 0.4));
+        }
+      }
+    }
+  }
+
+  .report-chart {
+    .apexcharts-datalabels-group {
+      text {
+        &:first-child {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  .location-chat-label {
+    .apexcharts-canvas {
+      .apexcharts-datalabels {
+        translate: 0px -5px;
+
+        .apexcharts-data-labels {
+          rect {
+            height: 25px;
+            width: 30px;
+            stroke: #fff;
+            stroke-width: 3px;
+            filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+          }
+
+          &:first-child {
+            rect {
+              fill: var(--theme-default);
+            }
+          }
+
+          &:nth-child(2) {
+            rect {
+              fill: rgba(255, 184, 41, 1);
+            }
+          }
+
+          &:nth-child(3) {
+            rect {
+              fill: #f75270;
+            }
+          }
+
+          &:nth-child(4) {
+            rect {
+              fill: #556b2f;
+            }
+          }
+
+          &:nth-child(5) {
+            rect {
+              fill: #9e1c60;
+            }
+          }
+
+          &:nth-child(6) {
+            rect {
+              fill: #f87b1b;
+            }
+          }
+
+          &:last-child {
+            rect {
+              fill: rgba(214, 76, 89, 1);
+            }
+          }
+
+          text {
+            translate: 1px 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**=====================
+  3.20 Dashboard_default CSS Ends
+==========================**/

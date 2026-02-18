@@ -1,0 +1,24 @@
+@use "bootstrap/dist/css/bootstrap.min.css";
+
+// @use 'font-awesome/css/font-awesome.min.css';
+
+@use './icoicon/icons-ico';
+// @use './themify';
+// @use './style';
+@use './responsive';
+@use './react-plugin';
+
+@use 'font-awesome/scss/font-awesome.scss';
+
+@use 'react-loading-skeleton/dist/skeleton.css';
+
+@use "vendors/feather-icon.scss";
+@use "vendors/icons";
+@use "vendors/themify/themify-icons";
+@use "vendors/font-awesome-icon.scss";
+
+//simple-bar
+@use 'simplebar-react/dist/simplebar.min.css';
+
+// @use './src/index.scss'
+@use './style.scss';
