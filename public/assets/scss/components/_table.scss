@@ -155,6 +155,9 @@ th {
 
             svg {
               stroke: rgba($primary-color, 1);
+              body.dark-only & {
+                stroke: white !important;
+              }
             }
           }
 

@@ -1878,27 +1878,44 @@
 
                         &:hover {
                           .sidebar-link:not(.active) {
+                            body.dark-only & {
+                              background: rgba($white, 0.1)  !important;
+                            }
                             &:hover {
                               svg {
                                 fill: rgba($primary-color, 0.1%);
                                 stroke: var(--theme-default);
                                 transition: all 0.3s ease;
 
+                                body.dark-only & {
+                                  stroke: rgba($white, 1)  !important;
+                                }
+
                                 &.fill-icon {
                                   fill: var(--theme-default);
                                   stroke: none;
+                                  body.dark-only & {
+                                    fill: rgba($white, 1) !important;
+                                  }
+  
                                 }
                               }
 
                               span {
                                 color: var(--theme-default);
                                 transition: all 0.3s ease;
+                                body.dark-only & {
+                                  color: rgba($white, 1) !important;
+                                }
                               }
 
                               .according-menu {
                                 i {
                                   color: var(--theme-default);
                                   transition: all 0.3s ease;
+                                  body.dark-only & {
+                                    color: rgba($white, 1)  !important;
+                                  }
                                 }
                               }
                             }
@@ -2050,6 +2067,10 @@
                               right: unset;
                               left: 0;
                             }
+                            body.dark-only &{
+                              background-color: rgba($white, 1) !important;
+
+                            }
                           }
 
                           &.active {
@@ -2057,6 +2078,12 @@
                             position: relative;
                             margin-bottom: 10px;
                             background-color: rgba($primary-color, 0.1);
+                            body.dark-only &{
+                              background-color: rgba($white, 0.1) !important;
+                              span , svg.stroke-icon{
+                                color: white; stroke: white;
+                              }
+                            }
 
                             &::after {
                               opacity: 1;
@@ -2156,6 +2183,7 @@
       .toggle-sidebar {
         svg {
           stroke: var(--theme-default);
+
         }
       }
 

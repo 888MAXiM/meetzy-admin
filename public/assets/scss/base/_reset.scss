@@ -1748,10 +1748,21 @@ $i: 1;
       border: 1px solid $primary-color !important;
       padding: 5px 8px;
 
+      body.dark-only & {
+        background-color: rgba($white, 0.1) !important;
+        border-color: rgba($white, 0.5) !important;
+        color: rgba($white, 1) !important;
+      }
+
       svg {
         color: $primary-color !important;
         stroke: $primary-color !important;
         fill: none !important;
+        body.dark-only & {
+          color: $white !important;
+          stroke: $white !important;
+        }
+
       }
     }
   }
@@ -2032,6 +2043,11 @@ $page-colors: (
   align-items: center;
   background-color: rgba($primary-color, 0.1);
 
+  body.dark-only &{
+  background-color: rgba($white, 0.1);
+
+  }
+
   @media (max-width: 1199px) {
     width: 40px;
     height: 40px;
@@ -2040,6 +2056,10 @@ $page-colors: (
   span {
     color: $primary-color;
     line-height: 0px !important;
+    body.dark-only &{
+      color: rgba($white, 1);
+    
+      }
   }
 }
 

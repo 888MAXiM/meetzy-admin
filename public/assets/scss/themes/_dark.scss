@@ -1324,7 +1324,7 @@ body {
 
     .toggle-sidebar {
       svg {
-        stroke: var(--theme-default);
+        stroke: rgba($white, 1);
       }
     }
 
@@ -3952,6 +3952,7 @@ body {
             .page-item.active {
               .page-link {
                 background-color: $dark-body-background;
+                color: rgba($white, 1) !important;
               }
             }
 
