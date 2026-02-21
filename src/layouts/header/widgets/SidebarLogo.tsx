@@ -17,14 +17,14 @@ const SidebarLogo = () => {
         <Link to={`/`}>
           <Image
             className="img-fluid for-light"
-            src={`${logo_light_url ? ImageBaseUrl + logo_light_url : `/logos/1.svg`}`}
+            src={`${logo_light_url ? ImageBaseUrl + logo_light_url : `/logos/logo.jpg`}`}
             alt="logo"
             height={30}
             width={102}
           />
           <Image
             className="img-fluid for-dark"
-            src={`${logo_dark_url ? ImageBaseUrl + logo_dark_url : `/logos/3.svg`}`}
+            src={`${logo_dark_url ? ImageBaseUrl + logo_dark_url : `/logos/logo.jpg`}`}
             alt="logo_dark"
             height={30}
             width={102}

@@ -26,8 +26,8 @@ const AuthWrapper = ({ children, showBackBtn = false }: AuthWrapperProps) => {
                   <SvgIcon iconId="back-arrow-icon" />
                 </div>
               )}
-              <Image className="img-fluid for-light" src="/logos/1.svg" alt="ChatLogo" />
-              <Image className="img-fluid for-dark" src="/logos/3.svg" alt="logo_dark" />
+              <Image className="img-fluid for-light" src="/logos/logo.jpg" alt="ChatLogo" />
+              <Image className="img-fluid for-dark" src="/logos/logo.jpg" alt="logo_dark" />
             </div>
             {children}
           </div>

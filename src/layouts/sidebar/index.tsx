@@ -24,7 +24,7 @@ const Sidebar = () => {
             <ul className="sidebar-links custom-scrollbar" id="simple-bar">
               <SimpleBar className="main-simplebar" key={currentLanguage}>
                 <li className="back-btn">
-                  <Image className="img-fluid" src="/logos/2.svg" alt="logo-icon" />
+                  <Image className="img-fluid" src="/logos/favicon.png" alt="logo-icon" />
                   <div className="mobile-back text-end">
                     <span>{t('back')}</span>
                     <i className="fa fa-angle-right ps-2" />

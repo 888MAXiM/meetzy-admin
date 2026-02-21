@@ -16,12 +16,12 @@ const LogoWrapper = () => {
         <Link to={ROUTES.HOME}>
           <Image
             className="img-fluid for-light"
-            src={`${logo_light_url ? ImageBaseUrl + logo_light_url : `/logos/1.svg`}`}
+            src={`${logo_light_url ? ImageBaseUrl + logo_light_url : `/logos/logo.jpg`}`}
             alt="logo"
           />
           <Image
             className="img-fluid for-dark"
-            src={`${logo_dark_url ? ImageBaseUrl + logo_dark_url : `/logos/3.svg`}`}
+            src={`${logo_dark_url ? ImageBaseUrl + logo_dark_url : `/logos/logo.jpg`}`}
             alt="logo_dark"
           />
         </Link>
@@ -36,7 +36,7 @@ const LogoWrapper = () => {
         <Link to={ROUTES.HOME}>
           <Image
             className="img-fluid"
-            src={`${sidebar_logo_url ? ImageBaseUrl + sidebar_logo_url : `/logos/2.svg`}`}
+            src={`${sidebar_logo_url ? ImageBaseUrl + sidebar_logo_url : `/logos/favicon.png`}`}
             alt="logo-icon"
           />
         </Link>
