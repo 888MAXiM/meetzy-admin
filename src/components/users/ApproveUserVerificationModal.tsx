@@ -89,7 +89,7 @@ const ApproveUserVerificationModal = ({
                 {userName && (
                   <Col md="12" className="mb-3">
                     <Label>User</Label>
-                    <div className="form-control" style={{ backgroundColor: '#f8f9fa', border: '1px solid #dee2e6' }}>
+                    <div className="form-control">
                       {userName}
                     </div>
                   </Col>
