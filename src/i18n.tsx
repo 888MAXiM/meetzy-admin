@@ -22,8 +22,8 @@ i18n
     resources: {
       en: {
         translations: {
-          hello_everyone_we_are_meetzy: 'Hello Everyone , We are meetzy',
-          welcome_to_meetzy_please_login_to_your_account: 'Welcome to meetzy please, login to your account.',
+          hello_everyone_we_are_втренде: 'Hello Everyone , We are втренде',
+          welcome_to_втренде_please_login_to_your_account: 'Welcome to втренде please, login to your account.',
           name: 'Name',
           profile: 'Profile',
           first_name: 'First Name',
